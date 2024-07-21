@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+    --Very-light-gray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+}
+
+/*----------ATRIBUCIONES GLOBALES---------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Lexend Deca';
+    color: var(--Transparent-white);
+    font-size: .92rem;
+    line-height: 1.7;
+    letter-spacing: 0.005rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display';
+    font-size: 2.5rem;
+    color: white;
+    margin-top: 31px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+a {
+    display: inline-block;
+    color: var(--Transparent-white);
+    font-family: 'Lexend Deca';
+    background-color: white;
+    margin-top: 5px;
+    padding: 14px 31px 15px 31px;
+    border-radius: 40px;
+    font-size: .95rem;
+}
+
+body {
+    background-color: var(--Transparent-white);
+}
+
+/*------------------*/
+
+.contenedor {
+    width: 87%;
+    max-width: 650px;
+    margin: 88px auto;
+}
+
+.main__section {
+    padding: 48px 49px;
+    
+}
+
+.main__section--sedans {
+    background-color: var(--Bright-orange);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.card__link--sedans {
+    color: var(--Bright-orange);
+}
+
+.main__section--suvs {
+    background-color: var(--Dark-cyan);
+}
+
+.card__link--suvs {
+    color: var(--Dark-cyan);
+}
+
+.main__section--luxury {
+    background-color: var(--Very-dark-cyan);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.card__link--luxury {
+    color: var(--Very-dark-cyan);
+}
+
+@media (min-width: 768px) {
+    .contenedor {
+        width: 100%;
+        max-width: 970px;
+        margin: 170px auto;
+    }
+
+    .card__main {
+        display: flex;
+        margin: 0 auto;
+        height: 500px;
+    }
+
+    .main__section {
+        width: 325px;
+        margin: 0 auto;
+        
+    }
+    .main__section--sedans {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 8px;
+    }
+
+    .main__section--luxury {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    p {
+        width: 95%;
+    }
+    
+    .card__link {
+        margin-top: 70px;
+    }
+
+    .card__link:hover {
+        background-color: transparent;
+        color: white;
+        outline: 1px solid white;
+    }
+}
